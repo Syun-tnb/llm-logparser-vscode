@@ -4,6 +4,19 @@
 
 It solves a practical workflow problem: raw log files are hard to inspect in a text editor once they become large, multi-threaded, or Markdown-heavy. This extension provides a packaged webview UI inside VS Code for reading parsed conversations, filtering large threads, running lightweight analysis, and resuming recent work without switching to the CLI.
 
+## About this repository
+
+This repository contains the VS Code extension for llm-logparser.
+
+It was extracted from the main llm-logparser repository to:
+
+- simplify development and release cycles
+- isolate extension-specific dependencies
+- enable independent versioning
+
+The core parsing and CLI logic still lives in the main repository:
+https://github.com/Syun-tnb/llm-logparser
+
 ## Features
 
 - Browse parsed conversation logs in a dedicated Viewer mode
